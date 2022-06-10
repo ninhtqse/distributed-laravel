@@ -34,7 +34,7 @@ class RouteServiceProvider extends ServiceProvider
     private function registerAssets()
     {
         $this->publishes([
-            __DIR__ . '/config/optimus.components.php' => config_path('optimus.components.php'),
+            __DIR__ . '/config/components.php' => config_path('components.php'),
         ]);
     }
 
@@ -47,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
         $config = $this->app['config'];
 
         if ($config->get('optimus.components') === null) {
-            $config->set('optimus.components', require __DIR__ . '/config/optimus.components.php');
+            $config->set('optimus.components', require __DIR__ . '/config/components.php');
         }
     }
 

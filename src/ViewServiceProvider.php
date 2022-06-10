@@ -10,7 +10,7 @@ class ViewServiceProvider extends BaseViewServiceProvider
 {
     public function register()
     {
-        $config = $this->app['config']['optimus.components'];
+        $config = $this->app['config']['components'];
 
         $paths = Utilities::findNamespaceResources(
             $config['namespaces'],
