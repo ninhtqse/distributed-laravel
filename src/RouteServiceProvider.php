@@ -59,7 +59,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        $config = $this->app['config']['optimus.components'];
+        $config = $this->app['config']['components'];
 
         $middleware = $config['protection_middleware'];
         $basicMiddleware = $config['protection_basic_middleware'];
