@@ -15,7 +15,7 @@ class TranslationServiceProvider extends BaseTranslationServiceProvider
      */
     protected function registerLoader()
     {
-        $config = $this->app['config']['optimus.components'];
+        $config = $this->app['config']['components'];
 
         $paths = Utilities::findNamespaceResources(
             $config['namespaces'],
